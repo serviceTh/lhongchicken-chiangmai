@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านข้าวมันไก่ หลง</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #ffffff; /* เปลี่ยนพื้นหลังเป็นสีขาว */
+        }
+        .text-red-600 {
+            color: #dc2626;
+        }
+        .text-yellow-500 {
+            color: #f59e0b;
+        }
+        .bg-red-600 {
+            background-color: #dc2626;
+        }
+        .bg-white {
+            background-color: #fff;
+        }
+        .shadow-lg-red {
+            box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.1), 0 4px 6px -2px rgba(220, 38, 38, 0.05);
+        }
+        .rounded-3xl {
+            border-radius: 1.5rem;
+        }
+        .menu-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(220, 38, 38, 0.2), 0 10px 10px -5px rgba(220, 38, 38, 0.1);
+        }
+        .responsive-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-red-600 text-white py-10 rounded-b-3xl shadow-lg-red">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col items-center justify-center">
+                <span class="text-6xl font-extrabold mb-2 text-yellow-300">龍</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">หลง ข้าวมันไก่ เชียงใหม่</h1>
+                <p class="text-lg md:text-xl italic font-light">ไก่เนื้อนุ่มชุ่มฉ่ำ หนังกรอบ เนื้อฉ่ำ</p>
+                <a href="#menu" class="mt-4 px-6 py-2 bg-yellow-500 text-red-600 font-bold rounded-full hover:bg-yellow-400 transition-colors">
+                    ดูเมนูของเรา
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <main id="menu" class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12 text-red-600 tracking-wide">เมนูอาหาร</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Menu Item 1: ข้าวมันไก่ต้ม -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg menu-card">
+                <div class="relative h-60">
+                    <img src="https://raw.githubusercontent.com/serviceTh/lhongchicken-chiangmai/refs/heads/main/01.jpg" alt="ข้าวมันไก่ต้ม" class="responsive-image">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">ข้าวมันไก่ต้ม</h3>
+                    <p class="text-gray-600 mb-4">ข้าวมันหอมนุ่ม เสิร์ฟพร้อมไก่ต้มเนื้อนุ่มชุ่มฉ่ำ</p>
+                    <div class="flex justify-between items-center text-lg">
+                        <span class="font-bold text-red-600">ธรรมดา</span>
+                        <span class="text-lg font-bold text-gray-600">฿50</span>
+                    </div>
+                    <div class="flex justify-between items-center text-lg mt-1">
+                        <span class="font-bold text-red-600">พิเศษ</span>
+                        <span class="text-lg font-bold text-yellow-500">฿60</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 2: ข้าวมันไก่ทอด -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg menu-card">
+                <div class="relative h-60">
+                    <img src="https://raw.githubusercontent.com/serviceTh/lhongchicken-chiangmai/refs/heads/main/02.jpg" alt="ข้าวมันไก่ทอด" class="responsive-image">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">ข้าวมันไก่ทอด</h3>
+                    <p class="text-gray-600 mb-4">ไก่ทอดกรอบนอกนุ่มใน เสิร์ฟพร้อมข้าวมันหอมๆ</p>
+                    <div class="flex justify-between items-center text-lg">
+                        <span class="font-bold text-red-600">ธรรมดา</span>
+                        <span class="text-lg font-bold text-gray-600">฿50</span>
+                    </div>
+                    <div class="flex justify-between items-center text-lg mt-1">
+                        <span class="font-bold text-red-600">พิเศษ</span>
+                        <span class="text-lg font-bold text-yellow-500">฿60</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 3: ข้าวมันไก่ผสม -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg menu-card">
+                <div class="relative h-60">
+                    <img src="https://raw.githubusercontent.com/serviceTh/lhongchicken-chiangmai/refs/heads/main/03.jpg" alt="ข้าวมันไก่ผสม" class="responsive-image">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">ข้าวมันไก่ผสม</h3>
+                    <p class="text-gray-600 mb-4">ความอร่อยสองสไตล์ในจานเดียว ทั้งไก่ต้มและไก่ทอด</p>
+                    <div class="flex justify-between items-center text-lg">
+                        <span class="font-bold text-red-600">ธรรมดา</span>
+                        <span class="text-lg font-bold text-gray-600">฿60</span>
+                    </div>
+                    <div class="flex justify-between items-center text-lg mt-1">
+                        <span class="font-bold text-red-600">พิเศษ</span>
+                        <span class="text-lg font-bold text-yellow-500">฿70</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Item 4: ข้าวมันไก่ต้ม+ตับ -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg menu-card">
+                <div class="relative h-60">
+                    <img src="https://raw.githubusercontent.com/serviceTh/lhongchicken-chiangmai/refs/heads/main/04.jpg" alt="ข้าวมันไก่ต้ม+ตับ" class="responsive-image">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">ข้าวมันไก่ต้ม + ตับ</h3>
+                    <p class="text-gray-600 mb-4">ข้าวมันไก่ต้มพร้อมตับไก่เนื้อนุ่ม</p>
+                    <div class="flex justify-between items-center text-lg">
+                        <span class="font-bold text-red-600">ธรรมดา</span>
+                        <span class="text-lg font-bold text-gray-600">฿60</span>
+                    </div>
+                    <div class="flex justify-between items-center text-lg mt-1">
+                        <span class="font-bold text-red-600">พิเศษ</span>
+                        <span class="text-lg font-bold text-yellow-500">฿70</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 5: ไก่ต้มสับ -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg menu-card">
+                <div class="relative h-60">
+                    <img src="https://raw.githubusercontent.com/serviceTh/lhongchicken-chiangmai/refs/heads/main/05.jpg" alt="ไก่ต้มสับ" class="responsive-image">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">ไก่ต้มสับ</h3>
+                    <p class="text-gray-600 mb-4">ไก่ต้มเนื้อนุ่ม เสิร์ฟเป็นจาน</p>
+                    <div class="flex justify-between items-center text-lg">
+                        <span class="font-bold text-red-600">ธรรมดา</span>
+                        <span class="text-lg font-bold text-gray-600">฿100</span>
+                    </div>
+                    <div class="flex justify-between items-center text-lg mt-1">
+                        <span class="font-bold text-red-600">พิเศษ</span>
+                        <span class="text-lg font-bold text-yellow-500">฿180</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 6: ไก่ทอดสับ -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg menu-card">
+                <div class="relative h-60">
+                    <img src="https://raw.githubusercontent.com/serviceTh/lhongchicken-chiangmai/refs/heads/main/06.jpg" alt="ไก่ทอดสับ" class="responsive-image">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">ไก่ทอดสับ</h3>
+                    <p class="text-gray-600 mb-4">ไก่ทอดกรอบๆ เสิร์ฟเป็นจาน</p>
+                    <div class="flex justify-between items-center text-lg">
+                        <span class="font-bold text-red-600">ธรรมดา</span>
+                        <span class="text-lg font-bold text-gray-600">฿100</span>
+                    </div>
+                    <div class="flex justify-between items-center text-lg mt-1">
+                        <span class="font-bold text-red-600">พิเศษ</span>
+                        <span class="text-lg font-bold text-yellow-500">฿180</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 7: ไก่สับรวม (ต้ม+ทอด) -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg menu-card">
+                <div class="relative h-60">
+                    <img src="https://raw.githubusercontent.com/serviceTh/lhongchicken-chiangmai/refs/heads/main/07.jpg" alt="ไก่สับรวม" class="responsive-image">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">ไก่สับรวม (ต้ม+ทอด)</h3>
+                    <p class="text-gray-600 mb-4">ไก่ต้มและไก่ทอดรวมกันในจานเดียว</p>
+                    <div class="flex justify-between items-center text-lg">
+                        <span class="font-bold text-red-600">ธรรมดา</span>
+                        <span class="text-lg font-bold text-gray-600">฿100</span>
+                    </div>
+                    <div class="flex justify-between items-center text-lg mt-1">
+                        <span class="font-bold text-red-600">พิเศษ</span>
+                        <span class="text-lg font-bold text-yellow-500">฿180</span>
+                    </div>
+                </div>
+            </div>
+            
+             <!-- Menu Item 8: ข้าวมันเปล่า -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg menu-card">
+                <div class="relative h-60">
+                    <img src="https://raw.githubusercontent.com/serviceTh/lhongchicken-chiangmai/refs/heads/main/08.jpg" alt="ข้าวมัน" class="responsive-image">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">ข้าวมัน</h3>
+                    <p class="text-gray-600 mb-4">ข้าวมันหอมๆ นุ่มๆ</p>
+                    <div class="flex justify-between items-center text-lg">
+                        <span class="font-bold text-red-600">ธรรมดา</span>
+                        <span class="text-lg font-bold text-gray-600">฿15</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="bg-red-600 text-white py-12 mt-12 rounded-t-3xl shadow-lg-red">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-4 text-yellow-300">ติดต่อและแผนที่</h3>
+            <p class="text-lg mb-2">โทร: 095 475 2962</p>
+            <p class="text-lg mb-4">ที่อยู่: 456 ตำบลช้างเผือก อำเภอเมืองเชียงใหม่ เชียงใหม่ 50300</p>
+            <div class="mt-4 mb-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.954602693992!2d99.015514!3d18.87712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da23003ea83aab%3A0x748e574d7b638b41!2z4Lix4Lin4Lix4Lil4Liy4LiV4Li04Lir4LiB4Liy4Lir4Liy4LiZ4Lia4Lix4LmI4LiZ4Liy4Lih4LmI4Liy4LiZ4Liy!5e0!3m2!1sen!2sth!4v1716900451296!5m2!1sen!2sth" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-3xl"></iframe>
+            </div>
+            <a href="https://www.google.com/maps/place/%E0%B8%AB%E0%B8%A5%E0%B8%87%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B9%84%E0%B8%81%E0%B9%88+%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88/@18.8771251,99.0129337,17z/data=!3m1!4b1!4m6!3m5!1s0x30da23003ea83aab:0x748e574d7b638b41!8m2!3d18.87712!4d99.015514!16s%2Fg%2F11xt4s8ttp?hl=en&entry=ttu&g_ep=EgoyMDI1MDkyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="inline-block bg-yellow-500 text-red-600 font-bold px-6 py-3 rounded-full hover:bg-yellow-400 transition-colors">
+                ดูแผนที่ร้าน
+            </a>
+            <div class="mt-8 text-sm text-red-200">
+                <p>&copy; 2025 หลง ข้าวมันไก่ เชียงใหม่. สงวนลิขสิทธิ์.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
